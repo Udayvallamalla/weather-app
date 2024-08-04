@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 // Handle the /weather route
 app.get("/weather", async (req, res) => {
   const city = req.query.city;
-  const apiKey = '550ba14894a0daceef801a3c359b7963'; // Replace with your actual API key
+  const apiKey = '550ba14894a0daceef801a3c359b7963'; 
 
   if (!city) {
     return res.render("index", { weather: null, error: "Please enter a city" });
